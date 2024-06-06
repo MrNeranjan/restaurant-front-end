@@ -1,4 +1,5 @@
-import images from './images';
+import * as images from './images';
+
 
 const wines = [
   {
@@ -79,4 +80,4 @@ const awards = [
   },
 ];
 
-export  { wines, cocktails, awards };
+export { wines, cocktails, awards };

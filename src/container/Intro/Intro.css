@@ -1,0 +1,36 @@
+.video_container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--color-black);
+    position: relative; /* Ensure the parent container is positioned relative */
+  }
+  
+  .video_container video {
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    object-fit: cover; /* This will ensure the video covers the container */
+  }
+  
+  .video_controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add background to the control container for better visibility */
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer; /* Ensure the cursor changes to pointer */
+  }
+  
+  .video_controls svg {
+    color: white; /* Ensure the icon is visible */
+    width: 50px;
+    height: 50px;
+  }
+  
