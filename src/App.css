@@ -33,8 +33,7 @@
   flex-direction: column;
 }
 
-.app__wrapper_img {
-  flex: 1;
+.app__wrapper_img {   
   width: 100%;
   display: flex;
   justify-content: center;
@@ -98,6 +97,7 @@
 }
 
 .spoon__img {
+  margin-bottom: 2rem;
   width: 45px;
 }
 
@@ -123,6 +123,14 @@
   }
 }
 
+
+@media screen and (max-width: 1250px) {
+  .spoon__img img {
+    align-self: center;
+  }
+  
+}
+
 @media screen and (max-width: 1150px) {
   .app__wrapper {
     flex-direction: column;
@@ -139,6 +147,7 @@
   .app__wrapper_img img {
     width: 100%;
   }
+
 }
 
 @media screen and (max-width: 850px) {
